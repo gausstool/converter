@@ -10,8 +10,8 @@ rm -rf dist
 # 构建
 echo "开始配置环境变量..."
 cat << EOF > .env
-VITE_BASE_URL=/json-tools/
-VITE_BUILD_DIR=dist/json-tools
+VITE_BASE_URL=/
+VITE_BUILD_DIR=dist
 EOF
 
 # 运行构建脚本
@@ -19,7 +19,7 @@ echo "运行构建脚本..."
 npm run build
 
 # 进入构建目录
-cd dist/json-tools
+cd dist
 cp index.html 404.html
 cp index.html mobile.html
 touch .nojekyll # 防止 github pages 忽略 _ 开头的文件
@@ -27,7 +27,7 @@ touch .nojekyll # 防止 github pages 忽略 _ 开头的文件
 # 初始化 git 仓库（如果不存在）
 if [ ! -d .git ]; then
     git init
-    git remote add origin git@github.com:gausstool/json-tools.git
+    git remote add origin git@github.com:gausstool/gausszou.github.io.git
 fi
 
 # 添加所有文件到 git

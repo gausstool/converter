@@ -1,31 +1,10 @@
-# json-tools
+# Tool Box
 
-强大的 JSON 处理工具集
-
-[![json-tools](https://www.gausszhou.top/static/data/github/json-tools/2.png)](https://gausstool.github.io/json-tools/)
+我的在线工具箱
 
 ## Features
 
-### 高级特性
-
-- [ ] 组合工具（串行）
+- [x] 基本 Text 工具
+- [x] 基本 JSON 工具
 - [ ] 自定义函数工具
-
-### 核心工具
-
-- [x] JSON 压缩
-- [x] JSON 格式化
-- [x] JSON 排序
-- [x] JSON 深度解析
-- [x] JSON 嵌套转扁平
-- [x] JSON 扁平转嵌套
-- [x] JSON 转接口代码
-
-### 格式转换
-
-- [x] Object 转 JSON
-- [x] JSON 转 Object
-- [x] JSON 转 YAML
-- [x] YAML 转 JSON
-- [x] JSON 转 CSV
-- [x] CSV 转 JSON
+- [ ] 组合工具
