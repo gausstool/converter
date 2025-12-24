@@ -10,8 +10,8 @@ rm -rf dist
 # 构建
 echo "开始配置环境变量..."
 cat << EOF > .env
-VITE_BASE_URL=/apps/gauss-tool/
-VITE_BUILD_DIR=dist/apps/gauss-tool
+VITE_BASE_URL=/apps/converter/
+VITE_BUILD_DIR=dist/apps/converter
 EOF
 
 # 运行构建脚本
@@ -19,7 +19,7 @@ echo "运行构建脚本..."
 npm run build
 
 # 进入构建目录
-cd dist/apps/gauss-tool
+cd dist/apps/converter
 cp index.html 404.html
 cp index.html mobile.html
 
