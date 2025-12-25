@@ -3,7 +3,7 @@
     <div class="home-container">
       <div class="home-header">
         <MacIconButton></MacIconButton>
-        <a href="https://github.com/gausstool/json-tools">Github</a>
+        <a href="https://github.com/gausstool/converter">Github</a>
       </div>
       <div class="home-main">
         <div class="menu-container">

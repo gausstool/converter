@@ -24,21 +24,29 @@ export default defineConfig({
         manualChunks(id: string) {
           if (id.includes('.pnpm') || id.includes('node_modules')) {
             if (id.includes('@codemirror/lang-')) {
-              return id.match(/@codemirror\/([\w\-]+)/)?.[1];
+              const matches = id.match(/@codemirror\/([\w\-]+)/);
+              return matches?.[1];
             }
-            if (id.includes('@codemirror')) {
+            if (id.includes('@codemirror/')) {
               return 'codemirror';
             }
-            if (id.includes('@gausszhou')) {
+            if (id.includes('@gausszhou/')) {
               return id.match(/@gausszhou\/([\w\-]+)/)?.[1];
             }
-            if (id.includes('sql-formatter')) {
+            if (id.includes('/sql-formatter')) {
               return 'sql-formatter';
             }
-            if (id.includes('js-base64')) {
+            if (id.includes('/js-base64')) {
               return 'js-base64';
             }
-            if (id.includes('/vue') || id.includes('/pinia')) {
+            if (
+              id.includes('/vue') ||
+              id.includes('/pinia') ||
+              id.includes('/@vue') ||
+              id.includes('nprogress') ||
+              id.includes('localforage') ||
+              id.includes('vite-plugin')
+            ) {
               return 'core';
             }
           }
